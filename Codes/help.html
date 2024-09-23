@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .help-section {
+            text-align: center;
+        }
+        .help-section h1{
+            margin-bottom: 10px;
+        }
+        .help-section p {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .topics {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .topics .column {
+            flex: 1;
+            padding: 0 20px;
+        }
+        select {
+            margin-bottom: 20px;
+            padding: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="help-section">
+        <h1>Craigslist Help Section</h1>
+
+       
+        <p>Find assistance with various aspects of using Craigslist below:</p>
+
+        <h2>Topics</h2>
+
+        <div class="topics">
+            <div class="column">
+                <p>Posting</p>
+                <select name="posting">
+                    <option value="" disabled selected>Posting concern?</option>
+                    <option value="creating">Creating a post</option>
+                    <option value="modifying">Modifying a post</option>
+                    <option value="verifying">Verifying a post</option>
+                    <option value="features">Posting features</option>
+                </select>
+
+                <p>Searching</p>
+                <select name="searching">
+                    <option value="" disabled selected>Searching concern?</option>
+                    <option value="find_posting">How to find my posting</option>
+                    <option value="searching_craigslist">Searching Craigslist</option>
+                    <option value="view_results">Ways to view search results</option>
+                    <option value="filter_results">Filtering search results</option>
+                </select>
+
+                <p>Account</p>
+                <select name="account">
+                    <option value="" disabled selected>Account concern?</option>
+                    <option value="signup">Sign up for an account</option>
+                    <option value="login">Log in to your account</option>
+                    <option value="features">Account features</option>
+                </select>
+
+                <p>Safety</p>
+                <select name="safety">
+                    <option value="" disabled selected>Safety concern?</option>
+                    <option value="in_person">In-person transactions</option>
+                    <option value="scams">Online scams</option>
+                    <option value="harassment">Harassment</option>
+                </select>
+            </div>
+
+            <div class="column">
+                <p>Billing</p>
+                <select name="billing">
+                    <option value="" disabled selected>Billing concern?</option>
+                    <option value="fees">Posting fees</option>
+                    <option value="paid_posting">How to submit a paid post</option>
+                    <option value="invoice">Pay an invoice online</option>
+                    <option value="auto_repost">Auto-repost</option>
+                    <option value="bulk_posting">Bulk posting interface</option>
+                </select>
+
+                <p>Legal</p>
+                <select name="legal">
+                    <option value="" disabled selected>Legal concern?</option>
+                    <option value="https://www.craigslist.org/about/help/posting/create"> Law enforcement</option>
+                    <option value="copyright">Copyright violation</option>
+                    <option value="terms">Terms of use</option>
+                 </select>
+
+               
+                <p>FAQ</p>
+                <select name="faq">
+                    <option value="" disabled selected>Frequently asked Questions</option>
+                    <option value="cost">How much does it cost to make a Craigslist posting?</option>
+                    <option value="duration">How long will my posting stay on the site?</option>
+                    <option value="flagging">What are flags and flagging?</option>
+                    <option value="relay">What is CL mail relay?</option>
+                    <option value="dns_error">Why am I getting a DNS error?</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
