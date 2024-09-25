@@ -1,0 +1,88 @@
+/* */
+/* Center everything on the nav element */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* add margin to everything inside nav element */
+nav img,
+,
+nav a {
+  margin: 20px;
+}
+
+/* adjust the properties links */
+nav a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+  background-color: #004aad;
+}
+
+/* used to transition the navigation bar*/
+a:hover {
+  color: rgb(245, 49, 49);
+  transition: 0.3s;
+}
+
+.logo {
+  font-size: 100px;
+  text-align: center;
+  color: #004aad;
+}
+
+/* adjust the paragraph in the center */
+.mainText {
+  text-align: center;
+  margin: 70px;
+  font-size: 20px;
+}
+
+/* shop now button element */
+button {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 10px 1px rgb(68, 68, 82);
+}
+button:active {
+  background-color: #042e64;
+}
+button:hover {
+  background-color: rgb(52, 121, 211);
+}
+
+/* div element for the 'shop now button' */
+/* used to center the button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* used to center the form with the inputs*/
+form {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* used to adjust search input properties*/
+form input {
+  width: 350px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgb(68, 68, 82);
+  transition: width 0.5s ease-in-out;
+}
+
+/* used to transition the search bar*/
+form input:hover {
+  width: 450px;
+}
