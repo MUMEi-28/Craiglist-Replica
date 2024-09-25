@@ -1,3 +1,7 @@
+body {
+  background-color: #efe9e1;
+}
+
 /* */
 /* Center everything on the nav element */
 nav {
@@ -8,7 +12,6 @@ nav {
 
 /* add margin to everything inside nav element */
 nav img,
-,
 nav a {
   margin: 20px;
 }
@@ -18,13 +21,16 @@ nav a {
   color: black;
   text-decoration: none;
   transition: 0.5s;
-  background-color: #004aad;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
 /* used to transition the navigation bar*/
 a:hover {
-  color: rgb(245, 49, 49);
+  color: #f8fbff;
   transition: 0.3s;
+  background-color: #626364;
+  border-radius: 20px;
 }
 
 .logo {
