@@ -1,4 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
+  min-height: 100vh;
   background-color: #efe9e1;
 }
 
@@ -9,8 +14,11 @@ body {
 }
 .topHeader {
   background-color: rgb(153, 12, 153);
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 0px;
+}
+.h2{
+padding: 3.5%;
 }
 
 .worldMapContainer {
@@ -42,15 +50,58 @@ svg path:hover {
 /* */
 /* Center everything on the nav element */
 nav {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
+  align-items: center;
 }
+nav ul{
+width:100%;
+list-style: none;
+display: flex;
+justify-content: flex-end;
+background-color: #626364;
+}
+
+nav li{
+  height: 50px;
+  align-items: center;
+}
+
+.sidebar{
+position: fixed;
+top: 0;
+right: 0;
+height: 100vh;
+width: 250px;
+z-index: 999;
+background-color: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px);
+box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.sidebar li {
+width: 100%;
+
+
+}
+.sidebar a {
+  width: 100%;
+}
+
 
 /* add margin to everything inside nav element */
 nav img,
 nav a {
-  margin: 20px;
+  height: 100%;
+  padding: 0 30px;
+  align-items: center;
 }
 
 /* adjust the properties links */
@@ -99,6 +150,13 @@ a:hover {
   .logo {
     font-size: 40px;
   }
+  
+}
+@media (max-width: 1000px){
+  .hideonMobile{
+    display: none;
+  }
+
 }
 
 /* adjust the paragraph in the center */
