@@ -20,6 +20,9 @@ body {
 
 .worldMapContainer {
   background-color: #313438;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 svg path {
   fill: rgb(38, 64, 112);
@@ -30,6 +33,12 @@ svg path:hover {
   fill: rgb(9, 50, 138);
   transform: 0.6s;
   cursor: pointer;
+}
+
+/* Adjust the avg world map base on the size*/
+#world-map {
+  width: 95%;
+  height: auto;
 }
 /* */
 /* Center everything on the nav element */
