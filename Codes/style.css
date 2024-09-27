@@ -19,9 +19,17 @@ body {
 }
 
 .worldMapContainer {
-  background-color: #004aad;
-  width: 50%; /* Set a width for the div */
-  margin: 0 auto; /* This will center the div horizontally */
+  background-color: #313438;
+}
+svg path {
+  fill: rgb(38, 64, 112);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 0.5px;
+}
+svg path:hover {
+  fill: rgb(9, 50, 138);
+  transform: 0.6s;
+  cursor: pointer;
 }
 /* */
 /* Center everything on the nav element */
