@@ -7,16 +7,32 @@ body {
   min-height: 100vh;
   background-color: #efe9e1;
 }
+
+/* Adjust the header properties */
 .topHeader {
   background-color: #b48fd9;
   padding: 15px;
   border-radius: 0px;
 }
-header div {
+
+/* Adjust the main logo properties */
+.logo {
+  width: 5%;
+  height: auto;
+}
+.headerLogo {
+  padding-top: 30px;
   text-align: center;
 }
-.h2 {
-  padding: 3.5%;
+.headerLogo img {
+  width: 60px;
+  height: auto;
+}
+.headerLogo h2 {
+  font-size: 80px;
+}
+header div {
+  text-align: center;
 }
 
 .worldMapContainer {
@@ -219,6 +235,12 @@ form input {
   border-radius: 10px;
   box-shadow: 0 0 10px 1px rgb(68, 68, 82);
   transition: width 0.5s ease-in-out;
+}
+form img {
+  margin-left: -50px;
+
+  width: 35px;
+  height: auto;
 }
 
 /* used to transition the search bar*/
