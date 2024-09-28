@@ -53,12 +53,9 @@ svg path:hover {
   height: auto;
 }
 /* */
-/* Center everything on the nav element */
-nav {
-  flex-wrap: nowrap;
-  align-items: center;
+.topNav {
+  border: 8px solid #42321f;
 }
-
 /* Adjust the top bar properties */
 .PcTopBar {
   width: 100%;
@@ -89,7 +86,7 @@ nav {
   border-radius: 20px;
 
   text-decoration: none;
-  transition: background-color 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 .PcTopBar a:hover {
   border-radius: 20px;
@@ -201,12 +198,16 @@ button {
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 0 10px 1px rgb(68, 68, 82);
+
+  transition: 0.3s ease-in-out;
 }
 button:active {
   background-color: #042e64;
 }
 button:hover {
   background-color: rgb(52, 121, 211);
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 /* div element for the 'shop now button' */
