@@ -7,16 +7,13 @@ body {
   min-height: 100vh;
   background-color: #efe9e1;
 }
-
-.topHeader h1 {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-}
 .topHeader {
-  background-color: rgb(153, 12, 153);
+  background-color: #b48fd9;
   padding: 15px;
   border-radius: 0px;
+}
+header div {
+  text-align: center;
 }
 .h2 {
   padding: 3.5%;
@@ -133,15 +130,6 @@ nav li {
 }
 .sidebar a {
   width: 100%;
-}
-
-/* adjust the properties links */
-header a {
-  color: black;
-  text-decoration: none;
-  transition: 0.5s;
-  padding: 10px 20px;
-  border-radius: 8px;
 }
 
 /* Resize the logo based on the screen size */
