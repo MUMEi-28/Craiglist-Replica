@@ -14,33 +14,40 @@
             <h1>CRAI <img src="" alt="logo here" width="" height="">LIST</h1>
         </div>
     </header>
-    <main>      
-        
+    <main>
+
         <nav ul>
-        <ul>
-            <ul class="sidebar">
-                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a class="active" href="#home">HOME</a></li>
-                <li> <a href="#about">ABOUT</a></li>
-                <li> <a href="#shop">SHOP</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#help">HELP</a></li>
-                <li><img src="" alt="profile logo here"></li>
+            <ul>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a class="active" href="#home">HOME</a></li>
+                    <li> <a href="#about">ABOUT</a></li>
+                    <li> <a href="#shop">SHOP</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#help">HELP</a></li>
+                    <li><img src="" alt="profile logo here"></li>
+                </ul>
+                <li class=hideonMobile><img src="" alt="globe logo Here"></li>
+                <li class=hideonMobile><a class="active" href="#home">HOME</a></li>
+                <li class=hideonMobile> <a href="#about">ABOUT</a></li>
+                <li class=hideonMobile> <a href="#shop">SHOP</a></li>
+                <li class=hideonMobile><a href="#contact">CONTACT</a></li>
+                <li class=hideonMobile><a href="#help">HELP</a></li>
+                <li class=hideonMobile><img src="" alt="profile logo here"></li>
+                <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
-        <li class = hideonMobile><img src="" alt="globe logo Here"></li>
-        <li class = hideonMobile><a class="active" href="#home">HOME</a></li>
-        <li class = hideonMobile> <a href="#about">ABOUT</a></li>
-        <li class = hideonMobile> <a href="#shop">SHOP</a></li>
-        <li class = hideonMobile><a href="#contact">CONTACT</a></li>
-        <li class = hideonMobile><a href="#help">HELP</a></li>
-        <li class = hideonMobile><img src="" alt="profile logo here"></li>
-        <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
         </nav ul>
 
         <div class="h2">
-        <h2 class="logo">CRAI <img src="" alt="logo here" width="" height="">LIST</h2>
-    </div>
+            <h2 class="logo">CRAI <img src="" alt="logo here" width="" height="">LIST</h2>
+        </div>
 
         <p class="mainText">Need to buy, sell, or find something locally?
             Craigslist makes it easy! Whether you're looking for a new home, selling items, or offering
@@ -1569,27 +1576,27 @@
     <hr>
     <footer>
         <div>
-        <nav>
-            <p>&copy; 2024 Craigslist</p>
-            <a href="#help">Help</a>
-            <a href="#safety">Safety</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#terms">Terms</a>
-            <a href="#app">App</a>
-        </nav>
+            <nav>
+                <p>&copy; 2024 Craigslist</p>
+                <a href="#help">Help</a>
+                <a href="#safety">Safety</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+                <a href="#app">App</a>
+            </nav>
     </footer>
-<script>
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-}
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
-    
-}
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
 
-</script>
+        }
+
+    </script>
 </body>
 
 </html>

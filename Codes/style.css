@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -17,8 +17,8 @@ body {
   padding: 15px;
   border-radius: 0px;
 }
-.h2{
-padding: 3.5%;
+.h2 {
+  padding: 3.5%;
 }
 
 .worldMapContainer {
@@ -35,11 +35,15 @@ svg path {
   fill: rgb(38, 64, 112);
   stroke: rgb(255, 255, 255);
   stroke-width: 0.5px;
+
+  transition: transform 0.6s, fill 0.6s;
 }
 svg path:hover {
-  fill: rgb(9, 50, 138);
+  fill: rgb(188, 201, 230);
   transform: 0.6s;
   cursor: pointer;
+
+  transform: scale(1.005); /* Scale the element by 20% */
 }
 
 /* Adjust the avg world map base on the size*/
@@ -57,44 +61,41 @@ nav {
   flex-wrap: nowrap;
   align-items: center;
 }
-nav ul{
-width:100%;
-list-style: none;
-display: flex;
-justify-content: flex-end;
-background-color: #626364;
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #626364;
 }
 
-nav li{
+nav li {
   height: 50px;
   align-items: center;
 }
 
-.sidebar{
-position: fixed;
-top: 0;
-right: 0;
-height: 100vh;
-width: 250px;
-z-index: 999;
-background-color: rgba(255, 255, 255, 0.2);
-backdrop-filter: blur(10px);
-box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: flex-start;
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .sidebar li {
-width: 100%;
-
-
+  width: 100%;
 }
 .sidebar a {
   width: 100%;
 }
-
 
 /* add margin to everything inside nav element */
 nav img,
@@ -150,13 +151,11 @@ a:hover {
   .logo {
     font-size: 40px;
   }
-  
 }
-@media (max-width: 1000px){
-  .hideonMobile{
+@media (max-width: 1000px) {
+  .hideonMobile {
     display: none;
   }
-
 }
 
 /* adjust the paragraph in the center */
