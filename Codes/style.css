@@ -1,24 +1,38 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
 }
 body {
   min-height: 100vh;
   background-color: #efe9e1;
 }
 
-.topHeader h1 {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-}
+/* Adjust the header properties */
 .topHeader {
-  background-color: rgb(153, 12, 153);
+  background-color: #b48fd9;
   padding: 15px;
   border-radius: 0px;
 }
-.h2 {
-  padding: 3.5%;
+
+/* Adjust the main logo properties */
+.logo {
+  width: 5%;
+  height: auto;
+}
+.headerLogo {
+  padding-top: 30px;
+  text-align: center;
+}
+.headerLogo img {
+  width: 60px;
+  height: auto;
+}
+.headerLogo h2 {
+  font-size: 80px;
+}
+header div {
+  text-align: center;
 }
 
 .worldMapContainer {
@@ -31,6 +45,10 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px 1px rgb(68, 68, 82);
 }
+.worldMapContainer h2 {
+  text-align: center;
+  padding: 30px;
+}
 svg path {
   fill: rgb(38, 64, 112);
   stroke: rgb(255, 255, 255);
@@ -42,8 +60,6 @@ svg path:hover {
   fill: rgb(188, 201, 230);
   transform: 0.6s;
   cursor: pointer;
-
-  transform: scale(1.005); /* Scale the element by 20% */
 }
 
 /* Adjust the avg world map base on the size*/
@@ -52,21 +68,54 @@ svg path:hover {
   height: auto;
 }
 /* */
-/* Center everything on the nav element */
-nav {
-  margin: 0;
-  padding: 0;
+.topNav {
+  border: 8px solid #42321f;
+}
+/* Adjust the top bar properties */
+.PcTopBar {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #42321f;
+}
+.PcTopBar .center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.PcTopBar li {
+  display: flex;
   align-items: center;
 }
-nav ul {
-  width: 100%;
+/* properties of the top navigation bar links */
+.PcTopBar a {
+  color: white;
+  box-sizing: border-box;
+
+  height: 100%;
+  padding: 15px 30px;
+  align-items: center;
+  border-radius: 20px;
+
+  text-decoration: none;
+  transition: 1s ease-in-out;
+}
+.PcTopBar a:hover {
+  border-radius: 20px;
+  background-color: #555;
+
+  transition: 0.3s;
+}
+.PcTopBar img {
+  height: 100%;
+}
+
+/* Remove all the styles of all un-ordered list */
+ul {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  background-color: #626364;
 }
 
 nav li {
@@ -95,31 +144,6 @@ nav li {
 }
 .sidebar a {
   width: 100%;
-}
-
-/* add margin to everything inside nav element */
-nav img,
-nav a {
-  height: 100%;
-  padding: 0 30px;
-  align-items: center;
-}
-
-/* adjust the properties links */
-header a {
-  color: black;
-  text-decoration: none;
-  transition: 0.5s;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
-/* used to transition the navigation bar*/
-a:hover {
-  color: #f8fbff;
-  transition: 0.3s;
-  background-color: #626364;
-  border-radius: 20px;
 }
 
 /* Resize the logo based on the screen size */
@@ -152,7 +176,8 @@ a:hover {
     font-size: 40px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+  .topNav
   .hideonMobile {
     display: none;
   }
@@ -173,12 +198,16 @@ button {
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 0 10px 1px rgb(68, 68, 82);
+
+  transition: 0.3s ease-in-out;
 }
 button:active {
   background-color: #042e64;
 }
 button:hover {
   background-color: rgb(52, 121, 211);
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 /* div element for the 'shop now button' */
@@ -206,6 +235,12 @@ form input {
   box-shadow: 0 0 10px 1px rgb(68, 68, 82);
   transition: width 0.5s ease-in-out;
 }
+form img {
+  margin-left: -50px;
+
+  width: 35px;
+  height: auto;
+}
 
 /* used to transition the search bar*/
 form input:hover {
@@ -216,10 +251,31 @@ form input:hover {
 footer {
   background-color: #42321f;
   color: white;
+  border: 8px solid #42321f;
 }
-footer a {
+footer a,
+footer p,
+footer div {
   color: white;
   transition: 0.5s;
   padding: 10px 20px;
   border-radius: 8px;
+}
+footer a {
+  transition: 1s ease-in-out;
+}
+footer p {
+  float: left;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer a:hover {
+  color: #f8fbff;
+
+  transition: 0.3s ease-in-out;
+  background-color: #005ebc;
+  border-radius: 20px;
+  transition: 0.3s;
 }
