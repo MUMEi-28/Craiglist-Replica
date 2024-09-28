@@ -90,7 +90,9 @@ svg path:hover {
 }
 .PcTopBar a:hover {
   border-radius: 20px;
-  background-color: #555; /* Change this to your desired hover background color */
+  background-color: #555;
+
+  transition: 0.3s;
 }
 .PcTopBar img {
   height: 100%;
@@ -136,15 +138,6 @@ header a {
   transition: 0.5s;
   padding: 10px 20px;
   border-radius: 8px;
-}
-
-/* used to transition the navigation bar*/
-a:hover {
-  color: #f8fbff;
-
-  transition: 0.3s;
-  background-color: #626364;
-  border-radius: 20px;
 }
 
 /* Resize the logo based on the screen size */
@@ -245,10 +238,31 @@ form input:hover {
 footer {
   background-color: #42321f;
   color: white;
+  border: 8px solid #42321f;
 }
-footer a {
+footer a,
+footer p,
+footer div {
   color: white;
   transition: 0.5s;
   padding: 10px 20px;
   border-radius: 8px;
+}
+footer a {
+  transition: 1s ease-in-out;
+}
+footer p {
+  float: left;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer a:hover {
+  color: #f8fbff;
+
+  transition: 0.3s ease-in-out;
+  background-color: #005ebc;
+  border-radius: 20px;
+  transition: 0.3s;
 }
