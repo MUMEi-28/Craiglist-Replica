@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
 }
 body {
   min-height: 100vh;
@@ -43,7 +44,7 @@ svg path:hover {
   transform: 0.6s;
   cursor: pointer;
 
-  transform: scale(1.005); /* Scale the element by 20% */
+  transform: scale(1.005);
 }
 
 /* Adjust the avg world map base on the size*/
@@ -54,19 +55,53 @@ svg path:hover {
 /* */
 /* Center everything on the nav element */
 nav {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
 }
-nav ul {
+
+/* Adjust the top bar properties */
+.PcTopBar {
   width: 100%;
-  list-style: none;
   display: flex;
-  justify-content: flex-end;
-  background-color: #626364;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #42321f;
+}
+.PcTopBar .center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.PcTopBar li {
+  display: flex;
+  align-items: center;
+}
+/* properties of the top navigation bar links */
+.PcTopBar a {
+  color: white;
+  box-sizing: border-box;
+
+  height: 100%;
+  padding: 15px 30px;
+  align-items: center;
+  border-radius: 20px;
+
+  text-decoration: none;
+  transition: background-color 1s ease-in-out;
+}
+.PcTopBar a:hover {
+  border-radius: 20px;
+  background-color: #555; /* Change this to your desired hover background color */
+}
+.PcTopBar img {
+  height: 100%;
+}
+
+/* Remove all the styles of all un-ordered list */
+ul {
+  list-style: none;
 }
 
 nav li {
@@ -97,14 +132,6 @@ nav li {
   width: 100%;
 }
 
-/* add margin to everything inside nav element */
-nav img,
-nav a {
-  height: 100%;
-  padding: 0 30px;
-  align-items: center;
-}
-
 /* adjust the properties links */
 header a {
   color: black;
@@ -117,6 +144,7 @@ header a {
 /* used to transition the navigation bar*/
 a:hover {
   color: #f8fbff;
+
   transition: 0.3s;
   background-color: #626364;
   border-radius: 20px;
