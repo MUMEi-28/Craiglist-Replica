@@ -60,8 +60,6 @@ svg path:hover {
   fill: rgb(188, 201, 230);
   transform: 0.6s;
   cursor: pointer;
-
-  transform: scale(1.005);
 }
 
 /* Adjust the avg world map base on the size*/

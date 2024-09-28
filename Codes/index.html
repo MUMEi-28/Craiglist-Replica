@@ -78,9 +78,7 @@
         </div>
 
         <div class="worldMapContainer">
-            <h2>
-                Select Your Country
-            </h2>
+            <h2 id="country-name">Select Your Country</h2>
             <svg id="world-map" baseprofile="tiny" fill="#ececec" height="857" stroke="black" stroke-linecap="round"
                 stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="1300"
                 xmlns="http://www.w3.org/2000/svg">
@@ -1612,6 +1610,25 @@
             sidebar.style.display = 'none'
 
         }
+
+        /* This change select your country */
+        document.addEventListener("DOMContentLoaded", function () {
+            const paths = document.querySelectorAll('path');/* Variable for the path */
+            const heading = document.getElementById('country-name');/* Variable for the Heading */
+
+            paths.forEach(path => {
+
+                /* change the heading 2 text to whatever country the mouse is hovering at */
+                path.addEventListener('mouseover', function () {
+                    heading.textContent = `${path.getAttribute('name')}`;
+                });
+
+                /* change the heading 2 text to 'Select your Country' When not hovering to any country */
+                path.addEventListener('mouseout', function () {
+                    heading.textContent = 'Select Your Country';
+                });
+            });
+        });
 
     </script>
 </body>
