@@ -8,13 +8,6 @@ body {
   background-color: #efe9e1;
 }
 
-/* Adjust the header properties */
-.topHeader {
-  background-color: #b48fd9;
-  padding: 15px;
-  border-radius: 0px;
-}
-
 /* Adjust the main logo properties */
 .logo {
   width: 5%;
@@ -69,7 +62,7 @@ svg path:hover {
 }
 /* */
 .topNav {
-  border: 8px solid #42321f;
+  border: 8px solid #2d0a4e;
 }
 /* Adjust the top bar properties */
 .PcTopBar {
@@ -77,7 +70,7 @@ svg path:hover {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #42321f;
+  background-color: #2d0a4e;
 }
 .PcTopBar .center-items {
   display: flex;
@@ -248,9 +241,9 @@ form input:hover {
 
 /* used to design the footer of the website */
 footer {
-  background-color: #42321f;
+  background-color: #2d0a4e;
   color: white;
-  border: 8px solid #42321f;
+  border: 8px solid #2d0a4e;
 }
 footer a,
 footer p,
