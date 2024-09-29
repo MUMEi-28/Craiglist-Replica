@@ -36,7 +36,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: blue;
+  background-color: #2d0a4e;
   padding: 0 16px;
 }
 
@@ -168,14 +168,6 @@
   font-weight: bold;
 }
 
-.footer {
-  width: 100%;
-  background-color: blue;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
 @media screen and (max-width: 768px) {
   .column.left,
   .column.middle,
@@ -220,9 +212,13 @@
 
 /* used to design the footer of the website */
 footer {
-  background-color: #42321f;
+  background-color: #2d0a4e;
   color: white;
-  border: 8px solid #42321f;
+  border: 8px solid #2d0a4e;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 footer a,
 footer p,
@@ -231,6 +227,8 @@ footer div {
   transition: 0.5s;
   padding: 10px 20px;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
 footer a {
   transition: 1s ease-in-out;
