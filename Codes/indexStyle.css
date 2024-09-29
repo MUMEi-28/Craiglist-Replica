@@ -177,8 +177,7 @@ nav li {
   }
 }
 @media (max-width: 800px) {
-  .topNav
-  .hideonMobile {
+  .topNav .hideonMobile {
     display: none;
   }
 }

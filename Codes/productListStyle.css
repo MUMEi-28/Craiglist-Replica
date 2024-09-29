@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid blue;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: powderblue;
+  color: black;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  padding: 0 16px;
+}
+
+.topnav .left,
+.topnav .right {
+  display: flex;
+  align-items: center;
+}
+
+.topnav .center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: lightskyblue;
+  color: black;
+}
+
+.topnav .icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 25px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.column {
+  padding: 10px;
+}
+
+.column.left {
+  width: 25%;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+.column.middle {
+  width: 50%;
+  background-color: white;
+  padding: 15px;
+}
+
+.column.right {
+  width: 25%;
+  background-color: white;
+  padding: 15px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: powderblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.categories {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categories li {
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.categories li:hover {
+  background-color: lightskyblue;
+}
+
+.calendar {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.calendar__date {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar__day,
+.calendar__number {
+  padding: 3px;
+  background-color: #f1f1f1;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.calendar__number--current {
+  background-color: lightskyblue;
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .column.left,
+  .column.middle,
+  .column.right {
+    width: 100%;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topnav .center {
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 30px 10px;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+/* used to design the footer of the website */
+footer {
+  background-color: #42321f;
+  color: white;
+  border: 8px solid #42321f;
+}
+footer a,
+footer p,
+footer div {
+  color: white;
+  transition: 0.5s;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+footer a {
+  transition: 1s ease-in-out;
+}
+footer p {
+  float: left;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer a:hover {
+  color: #f8fbff;
+
+  transition: 0.3s ease-in-out;
+  background-color: #005ebc;
+  border-radius: 20px;
+  transition: 0.3s;
+}

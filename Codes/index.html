@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexStyle.css">
 </head>
 
 <body>
-    <header>
-        <div class="topHeader">
-            <img class="logo" src="/Arts/images/CG-OfficialIcon.png" alt="logo here" width="50px" height="50px">
-        </div>
-    </header>
+    <!-- 
+        <header>
+            <div class="topHeader">
+                <img class="logo" src="/Arts/images/CG-OfficialIcon.png" alt="logo here" width="50px" height="50px">
+            </div>
+        </header>
+    -->
 
     <main>
         <!--Mobile Navigation Bar-->
@@ -1627,9 +1629,13 @@
                 path.addEventListener('mouseout', function () {
                     heading.textContent = 'Select Your Country';
                 });
+
+                /* Redirect the site to the product web */
+                path.addEventListener('click', () => {
+                    window.location.href = 'leftside.html';
+                });
             });
         });
-
     </script>
 </body>
 

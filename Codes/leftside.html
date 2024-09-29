@@ -5,310 +5,25 @@
     <title>Craigslist Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: black;
-            background-color: blanchedalmond;
-        }
-        p{
-            font: 1.5em sans-serif;
-        }
-
-        .h1 {
-            margin: 0;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: .8rem;
-            text-align: center;
-            background-color: blanchedalmond;
-            
-        }
-
-        .logo {
-            font-size: 150px;
-            text-align: center;
-            color: blue;
-            letter-spacing: 25px;
-        }
-
-        .logo img {
-            height: auto;
-            width: 5.8rem;
-        }
-
-        .header h2 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        .header p {
-            font-size: 1.9rem;
-            margin-top: 10px;
-        }
-
-        .search-container {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .search-container input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid blue;
-            border-radius: 5px 0 0 5px;
-            outline: none;
-        }
-
-        .search-container button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            background-color: blue;
-            color: white;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-        }
-
-        .search-container button:hover {
-            background-color: powderblue;
-            color: black;
-        }
-
-        .topnav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: blue;
-            padding: 0 16px;
-        }
-
-        .topnav .left,
-        .topnav .right {
-            display: flex;
-            align-items: center;
-        }
-
-        .topnav .center {
-            display: flex;
-            justify-content: center;
-            flex-grow: 1;
-        }
-
-        .topnav a {
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .topnav a:hover {
-            background-color: lightskyblue;
-            color: black;
-        }
-
-        .topnav .icon {
-            vertical-align: middle;
-            margin-right: 8px;
-            width: 25px;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 -10px;
-        }
-
-        .column {
-            padding: 10px;
-        }
-
-        .column.left {
-            width: 25%;
-            background-color: lightblue;
-            padding: 15px;
-        }
-
-        .column.middle {
-            width: 50%;
-            background-color: white;
-            padding: 15px;
-        }
-
-        .column.right {
-            width: 25%;
-            background-color: white;
-            padding: 15px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .product-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            background-color: powderblue;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .product-card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .product-card h3 {
-            font-size: 1.2rem;
-            margin: 10px 0;
-        }
-
-        .categories {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .categories li {
-            padding: 10px;
-            background-color: white;
-            margin-bottom: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .categories li:hover {
-            background-color: lightskyblue;
-        }
-
-        .calendar {
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .calendar h2 {
-            margin-top: 0;
-            font-size: 1.5rem;
-        }
-
-        .calendar__date {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 5px;
-        }
-
-        .calendar__day,
-        .calendar__number {
-            padding: 3px;
-            background-color: #f1f1f1;
-            text-align: center;
-            border-radius: 4px;
-        }
-
-        .calendar__number--current {
-            background-color: lightskyblue;
-            color: white;
-            font-weight: bold;
-        }
-
-        .footer {
-            width: 100%;
-            background-color: blue;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        @media screen and (max-width: 768px) {
-            .column.left,
-            .column.middle,
-            .column.right {
-                width: 100%;
-            }
-
-            .header h2 {
-                font-size: 2rem;
-            }
-
-            .header p {
-                font-size: 1.5rem;
-            }
-
-            .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .topnav .center {
-                flex-direction: column;
-            }
-
-            .header {
-                padding: 30px 10px;
-            }
-
-            .header h2 {
-                font-size: 1.5rem;
-            }
-
-            .header p {
-                font-size: 1rem;
-            }
-
-            .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            }  
-
-        }
-    </style>
+    <link rel="stylesheet" href="/Codes/productListStyle.css">
 </head>
 
 <body>
-
-    <div class="h1">
-        
-        <h1><br>
-            <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\123.JPG" style="max-width: 100%; height: auto;">
-        </h1>
-        
-        <p>Need to buy, sell, or find something locally?Craigslist makes it easy! <br>
-            Whether you're looking for a new home, selling items, or offering services.<br>
-            Craigslist connects you directly with people in your area. <br>
-            Join today and start finding great deals!</p>
-        
-        <!-- Search Box -->
-        <div class="search-container">
-            <input type="text" placeholder="Search for products...">
-            <button type="submit">Search</button>
-        </div>
-
-        <br>
-    </div>
-
     <div class="topnav">
         <div class="center">
-            <a href="#"><img src="c:\Users\kezzi\Downloads\public_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png" alt="Location" class="icon"> Location</a>
-        
+            <a href="#"><img src="c:\Users\kezzi\Downloads\public_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png"
+                    alt="Location" class="icon"> Location</a>
+
             <a href="#">Home</a>
             <a href="#">Shop</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
             <a href="#">Help</a>
-        
-            <a href="#"><img src="c:\Users\kezzi\Downloads\person_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png" alt="Account" class="icon"> Account</a>
-            <a href="#"><img src="c:\Users\kezzi\Downloads\translate_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png" alt="Language" class="icon"> Language</a>
+
+            <a href="#"><img src="c:\Users\kezzi\Downloads\person_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png"
+                    alt="Account" class="icon"> Account</a>
+            <a href="#"><img src="c:\Users\kezzi\Downloads\translate_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png"
+                    alt="Language" class="icon"> Language</a>
         </div>
     </div>
 
@@ -370,41 +85,53 @@
         </div>
 
         <div class="column middle">
+
+            <!-- Search Box -->
+            <div class="search-container">
+                <input type="text" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </div>
             <h2>Popular Products</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\$_57.jfif" alt="Product 1">
+                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\$_57.jfif"
+                        alt="Product 1">
                     <h3>Product 1</h3>
-                    
+
                 </div>
                 <div class="product-card">
-                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\download.jfif" alt="Product 2">
+                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\download.jfif"
+                        alt="Product 2">
                     <h3>Product 2</h3>
-                  
+
                 </div>
 
                 <div class="product-card">
-                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\download (5).jfif" alt="Product 2">
+                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\download (5).jfif"
+                        alt="Product 2">
                     <h3>Product 3</h3>
-                    
+
                 </div>
 
                 <div class="product-card">
-                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\GUEST_20affc7e-e0d7-4eb6-a6f3-68d13520f8be.avif" alt="Product 2">
+                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\GUEST_20affc7e-e0d7-4eb6-a6f3-68d13520f8be.avif"
+                        alt="Product 2">
                     <h3>Product 4</h3>
-                   
+
                 </div>
 
                 <div class="product-card">
-                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\1_4850d78d-0b11-4019-b2a9-e631df8bb638_1024x1024.webp" alt="Product 2">
+                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\1_4850d78d-0b11-4019-b2a9-e631df8bb638_1024x1024.webp"
+                        alt="Product 2">
                     <h3>Product 5</h3>
-                    
+
                 </div>
 
                 <div class="product-card">
-                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\Bose-QuietComfort-Headphones-Main.jpg" alt="Product 2">
+                    <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\Bose-QuietComfort-Headphones-Main.jpg"
+                        alt="Product 2">
                     <h3>Product 6</h3>
-                    
+
                 </div>
 
 
@@ -413,17 +140,22 @@
 
         <div class="column right">
             <h2>Advertisement here</h2>
-            
+
         </div>
     </div>
-<!-- world map kinemnerlu -->
-     <div style="text-align: center; margin: 20px 0;" >
-        <img src="c:\Users\kezzi\Downloads\icons craigslist\Material Symbols & Icons - Google Fonts_files\246.JPG" alt="World Map" style="max-width: 100%; height: auto;">
 
-
-    <div class="footer">
-        <p>&copy; 2024 CRAI LIST. All rights reserved.</p>
-    </div>
+    <footer>
+        <nav>
+            <p>&copy; 2024 Craigslist</p>
+            <div>
+                <a href="#help">Help</a>
+                <a href="#safety">Safety</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+                <a href="#app">App</a>
+            </div>
+        </nav>
+    </footer>
 
 </body>
 
