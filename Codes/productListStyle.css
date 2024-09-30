@@ -214,6 +214,8 @@
   background-color: powderblue;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: 0.2s ease-in-out;
+  display: flex; 
+  flex-direction: column; 
 }
 .product-card:hover {
   transform: scale(1.1);
@@ -224,6 +226,11 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin-top: auto; /* Push the h3 to the bottom */
 }
 
 .categories {
