@@ -1,28 +1,22 @@
-@font-face {
-  font-family: juanaBold;
-  src: url(../Fonts/Juana/Fontspring-DEMO-juana-bold.otf);
-}
-@font-face {
-  font-family: juanaRegular;
-  src: url(../Fonts/Juana/Fontspring-DEMO-juana-regular.otf);
-}
-@font-face {
-  font-family: trialRegular;
-  src: url(../Fonts/Trial_aktivgrotesk/TrialStaticFonts/AktivGroteskCd_Trial_LtIt.ttf);
-}
-a {
-  font-family: juanaRegular, "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
-}
-p {
-  font-family: trialRegular, "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+}
+
+@font-face {
+  font-family: juanaBold;
+  src: url(../Fonts/JuanaBold.otf);
+}
+@font-face {
+  font-family: trialRegular;
+  src: url(../Fonts/AktivGrotesk.ttf);  
+}
+a {
+  font-family: juanaRegular;
+}
+p {
+  font-family: trialRegular;
 }
 
 body {
@@ -49,6 +43,10 @@ body {
 }
 header div {
   text-align: center;
+}
+
+#country-name {
+  font-family: juanaBold;
 }
 
 .worldMapContainer {
@@ -118,6 +116,7 @@ svg path:hover {
 
   text-decoration: none;
   transition: 1s ease-in-out;
+  font-family: juanaBold;
 }
 .PcTopBar a:hover {
   border-radius: 20px;
@@ -213,6 +212,7 @@ button {
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 0 10px 1px rgb(68, 68, 82);
+  font-family: trialRegular;
 
   transition: 0.3s ease-in-out;
 }
@@ -267,6 +267,7 @@ footer {
   background-color: #2d0a4e;
   color: white;
   border: 8px solid #2d0a4e;
+  font-family: trialRegular;
 }
 footer a,
 footer p,
@@ -275,6 +276,7 @@ footer div {
   transition: 0.5s;
   padding: 10px 20px;
   border-radius: 8px;
+  font-family: trialRegular;
 }
 footer a {
   transition: 1s ease-in-out;
