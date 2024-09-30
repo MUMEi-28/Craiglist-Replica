@@ -119,6 +119,10 @@
 .sidebar li {
   margin: 10px;
   border-radius: 10px;
+  
+  
+}
+
 }
 .sideNav {
   display: flex;
@@ -148,7 +152,7 @@
 
 .sideNav .icon {
   vertical-align: middle;
-  margin-right: 8px;
+  margin-right: 5px;
   width: 25px;
 }
 
@@ -274,6 +278,29 @@ h2 {
   background-color: lightskyblue;
   color: white;
   font-weight: bold;
+}
+@media (max-width: 768px) { 
+  .TopBar ul{
+    flex-direction: column;
+    height: auto;
+    background-color: #2d0a4e;
+  }
+
+  .TopBar li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.TopBar li a {
+    justify-content: center;
+}
+
+.TopBar ul a {
+    display: block;
+    padding: 10px;
+}
+  
 }
 
 @media screen and (max-width: 1024px) {
