@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #2d0a4e;
-  display: flex;
+  /* display: flex; */
 }
 .TopBar ul {
   height: 10vh;
@@ -59,7 +59,22 @@
 .TopBar li {
   padding: 10px;
   border-radius: 10px;
+  display:flex
+ 
+  
 }
+
+.TopBar li img{
+  margin-right: 5px;
+}
+
+.TopBar a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center; 
+}
+
 .TopBar li:hover {
   background-color: #005ebc;
   color: black;
