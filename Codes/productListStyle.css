@@ -123,7 +123,6 @@
   
 }
 
-}
 .sideNav {
   display: flex;
   flex-direction: column;
@@ -172,6 +171,10 @@
   width: 25%;
   background-color: #efe9e1;
   box-sizing: border-box;
+}
+
+.column.left h2{
+  margin-left: 10px;
 }
 
 .column.middle {
