@@ -41,7 +41,6 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #2d0a4e;
-  /* display: flex; */
 }
 .TopBar ul {
   height: 10vh;
@@ -58,14 +57,13 @@
   text-decoration: none;
 }
 .TopBar li {
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 10px;
-  display:flex
- 
-  
+  display: flex;
+  transition: 1s ease-in-out;
 }
 
-.TopBar li img{
+.TopBar li img {
   margin-right: 5px;
 }
 
@@ -73,12 +71,13 @@
   color: white;
   text-decoration: none;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .TopBar li:hover {
   background-color: #005ebc;
   color: black;
+  transition: 0.2s ease-in-out;
 }
 
 /* Side Navigation Bar Settings */
