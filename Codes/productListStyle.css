@@ -91,6 +91,44 @@
   transition: 0.2s ease-in-out;
 }
 
+.TopBar li:first-child {
+  margin-right: auto;
+}
+
+.TopBar li:not(:first-child) {
+  margin-left: 20px;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .TopBar ul {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .TopBar li {
+    margin-bottom: 10px; 
+  }
+
+  .TopBar li:first-child {
+    margin-right: 0; 
+  }
+
+  .TopBar li:not(:first-child) {
+    margin-left: 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .TopBar ul {
+    padding: 10px; 
+  }
+
+  .TopBar li {
+    margin-bottom: 5px; 
+  }
+}
+
 /* Side Navigation Bar Settings */
 .sidebar {
   position: fixed;
@@ -119,8 +157,6 @@
 .sidebar li {
   margin: 10px;
   border-radius: 10px;
-  
-  
 }
 
 .sideNav {
@@ -230,7 +266,7 @@
 }
 
 .product-card h3 {
-  margin-top: auto; /* Push the h3 to the bottom */
+  margin-top: auto; 
 }
 
 .categories {
@@ -289,74 +325,8 @@ h2 {
   color: white;
   font-weight: bold;
 }
-@media (max-width: 768px) { 
-  .TopBar ul{
-    flex-direction: column;
-    height: auto;
-    background-color: #2d0a4e;
-  }
 
-  .TopBar li {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
 
-.TopBar li a {
-    justify-content: center;
-}
-
-.TopBar ul a {
-    display: block;
-    padding: 10px;
-}
-  
-}
-
-@media screen and (max-width: 1024px) {
-  .column.left,
-  .column.middle,
-  .column.right {
-    width: 100%;
-  }
-
-  .header h2 {
-    font-family: juanaBold;
-    font-size: 2rem;
-  }
-
-  .header p {
-    font-family: trialRegular;
-    font-size: 1.5rem;
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .topnav .center {
-    flex-direction: column;
-  }
-
-  .header {
-    padding: 30px 10px;
-  }
-
-  .header h2 {
-    font-size: 1.5rem;
-    font-family: juanaBold; 
-  }
-
-  .header p {
-    font-size: 1rem;
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  }
-}
 
 /* used to design the footer of the website */
 footer {
@@ -384,11 +354,14 @@ footer a {
   text-decoration: none;
 }
 footer p {
-  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
 }
 footer nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 footer a:hover {
   color: #f8fbff;

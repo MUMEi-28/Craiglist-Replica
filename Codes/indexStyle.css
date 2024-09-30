@@ -282,11 +282,14 @@ footer a {
   transition: 1s ease-in-out;
 }
 footer p {
-  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
 }
 footer nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 footer a:hover {
   color: #f8fbff;
