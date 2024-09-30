@@ -33,6 +33,7 @@
   color: black;
 }
 
+/* Top Navigation Bar Settings */
 .topnav {
   width: 100%;
   display: flex;
@@ -40,9 +41,8 @@
   justify-content: space-evenly;
   background-color: #2d0a4e;
   display: flex;
-
 }
-.topsidebar{
+.TopBar ul {
   height: 10vh;
   width: 100%;
   display: flex;
@@ -52,61 +52,69 @@
   background-color: #2d0a4e;
   list-style: none;
 }
+.TopBar ul a {
+  color: white;
+  text-decoration: none;
+}
+.TopBar li {
+  padding: 10px;
+  border-radius: 10px;
+}
+.TopBar li:hover {
+  background-color: #005ebc;
+  color: black;
+}
 
+/* Side Navigation Bar Settings */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100%;
   width: 250px;
-  z-index: 999;
-  background-color: rgba(64, 49, 199, 0.2);
+  background-color: rgba(119, 116, 141, 0.2);
   backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(29, 21, 21, 0.1);
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  text-align: justify;
   list-style: none;
+  transition: 0.4s;
+}
+.sidebar h1 {
+  text-align: right;
+  padding: 10px;
+  padding-left: 85px;
+  margin: 0;
+  text-align: center;
+}
+.sidebar ul {
+  padding: 30px;
 }
 .sidebar li {
-  width: 100%;
-  text-align: justify;
-
+  margin: 10px;
+  border-radius: 10px;
 }
-.sidebar a {
-  width: 100%;
-  text-align: justify;
-
-}
-
-
-.topnav .left,
-.topnav .right {
+.sideNav {
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-.topnav .center {
-  display: flex;
   justify-content: center;
-  flex-grow: 1;
+  height: 100%;
 }
 
-.topnav a {
-  color: #f2f2f2;
+.sideNav a {
+  color: #363333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.topnav a:hover {
+.sideNav a:hover {
+  border-radius: 10px;
   background-color: lightskyblue;
   color: black;
 }
 
-.topnav .icon {
+.sideNav .icon {
   vertical-align: middle;
   margin-right: 8px;
   width: 25px;
