@@ -132,6 +132,7 @@
 /* Side Navigation Bar Settings */
 .sidebar {
   position: fixed;
+  left: -250px;
   top: 0;
   right: 0;
   height: 100%;
