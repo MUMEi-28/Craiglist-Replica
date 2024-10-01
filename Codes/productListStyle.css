@@ -136,8 +136,8 @@
   right: 0;
   height: 100%;
   width: 250px;
-  background-color: rgba(119, 116, 141, 0.2);
-  color: white;
+  background-color: rgba(196, 193, 219, 0.788);
+  box-shadow: 1px 1px 20px 2px rgb(40, 10, 58);
   backdrop-filter: blur(10px);
   flex-direction: column;
   align-items: flex-start;
@@ -145,11 +145,10 @@
   transition: 0.4s;
 }
 .sidebar h1 {
-  text-align: right;
-  padding: 10px;
-  padding-left: 85px;
-  margin: 0;
+  padding: 20px;
+  margin: 10px auto;
   text-align: center;
+  color: black;
 }
 .sidebar ul {
   padding: 30px;
