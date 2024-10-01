@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: trialRegular;
-  src: url(../Fonts/AktivGrotesk.ttf);  
+  src: url(../Fonts/AktivGrotesk.ttf);
 }
 
 .search-container {
@@ -102,30 +102,30 @@
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
   .TopBar ul {
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .TopBar li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   .TopBar li:first-child {
-    margin-right: 0; 
+    margin-right: 0;
   }
 
   .TopBar li:not(:first-child) {
-    margin-left: 0; 
+    margin-left: 0;
   }
 }
 
 @media (max-width: 480px) {
   .TopBar ul {
-    padding: 10px; 
+    padding: 10px;
   }
 
   .TopBar li {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
   }
 }
 
@@ -168,7 +168,7 @@
   font-family: trialRegular;
 }
 
-.sideNav h1{
+.sideNav h1 {
   font-family: juanaBold;
 }
 
@@ -187,7 +187,6 @@
 
 .sideNav .icon {
   vertical-align: middle;
-  margin-right: 5px;
   margin-right: 8px;
   width: 25px;
 }
@@ -210,7 +209,7 @@
   box-sizing: border-box;
 }
 
-.column.left h2{
+.column.left h2 {
   margin-left: 10px;
 }
 
@@ -251,8 +250,8 @@
   background-color: powderblue;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: 0.2s ease-in-out;
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 .product-card:hover {
   transform: scale(1.1);
@@ -267,7 +266,7 @@
 }
 
 .product-card h3 {
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .categories {
@@ -277,7 +276,7 @@
 }
 
 h2 {
-  font-family: juanaBold; 
+  font-family: juanaBold;
 }
 
 .categories li {
@@ -327,7 +326,6 @@ h2 {
   font-weight: bold;
 }
 
-
 @media screen and (max-width: 1024px) {
   .column.left,
   .column.middle,
@@ -336,6 +334,7 @@ h2 {
   }
 
   .header h2 {
+    font-family: juanaBold;
     font-size: 2rem;
   }
 
@@ -360,7 +359,7 @@ h2 {
 
   .header h2 {
     font-size: 1.5rem;
-    font-family: juanaBold; 
+    font-family: juanaBold;
   }
 
   .header p {
