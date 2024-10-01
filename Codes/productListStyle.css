@@ -24,7 +24,7 @@
   padding: 10px;
   font-size: 16px;
   font-family: trialRegular;
-  border: 1px solid rgb(33, 33, 136);
+  border: 1px solid blue;
   border-radius: 5px 0 0 5px;
   outline: none;
 }
@@ -33,7 +33,7 @@
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  background-color: rgb(38, 38, 94);
+  background-color: blue;
   color: white;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -300,12 +300,9 @@ h2 {
 }
 
 .calendar h2 {
-  text-align: center;
+  margin-top: 0;
   font-size: 1.5rem;
   font-family: juanaBold;
-  border-bottom: 1.5px solid black;
-
-  margin: 10px;
 }
 
 .calendar__date {
