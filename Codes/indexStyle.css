@@ -157,6 +157,7 @@ nav li {
   margin: 10px auto;
   text-align: center;
   color: black;
+  font-family: juanaBold;
 }
 .sidebar ul {
   padding: 30px;
@@ -164,13 +165,13 @@ nav li {
 .sidebar li {
   margin: 5px;
   border-radius: 5px;
-  font-family: trialRegular;
 }
 .sidebar a {
   color: #363333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: trialRegular;
 }
 
 .sidebar a:hover {
@@ -210,6 +211,12 @@ nav li {
 }
 @media (max-width: 800px) {
   .topNav .hideonMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  li.sideNav {
     display: none;
   }
 }
