@@ -99,23 +99,9 @@
   margin-left: 20px;
 }
 
-/* Mobile-friendly adjustments */
-@media (max-width: 768px) {
-  .TopBar ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .TopBar li {
-    margin-bottom: 10px;
-  }
-
-  .TopBar li:first-child {
-    margin-right: 0;
-  }
-
-  .TopBar li:not(:first-child) {
-    margin-left: 0;
+@media (min-width: 1024px) {
+  li.hideonDesktop {
+    display: none;
   }
 }
 
@@ -347,6 +333,10 @@ h2 {
 
   .product-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  li.hideonMobile {
+    display: none;
   }
 }
 
