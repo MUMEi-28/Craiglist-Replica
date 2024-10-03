@@ -142,25 +142,42 @@ nav li {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100%;
   width: 250px;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(196, 193, 219, 0.788);
+  box-shadow: 1px 1px 20px 2px rgb(40, 10, 58);
   backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  list-style: none;
+  transition: 0.4s;
 }
-
+.sidebar h1 {
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+  color: black;
+}
+.sidebar ul {
+  padding: 30px;
+}
 .sidebar li {
-  width: 100%;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: trialRegular;
 }
 .sidebar a {
-  width: 100%;
+  color: #363333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
+.sidebar a:hover {
+  border-radius: 10px;
+  background-color: lightskyblue;
+  color: black;
+}
 /* Resize the logo based on the screen size */
 .logo {
   font-size: 100px;
