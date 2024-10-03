@@ -18,8 +18,8 @@
     -->
 
     <!--Mobile Navigation Bar-->
-    <nav hidden>
-        <ul class="sidebar">
+    <nav>
+        <ul class="sidebar" style="display:none;">
             <li onclick="hideSidebar()"><a href="#"><img src="../Arts/images/menubar.png" alt="menubar" class="icon"></a></li>
             <li><a class="active" href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -1595,14 +1595,13 @@
         </nav>
     </footer>
     <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
         function hideSidebar() {
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
-
+        }
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
         }
 
         /* This change select your country */
