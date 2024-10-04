@@ -1,210 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Craigslist Website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="productListStyle.css">
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="productListStyle.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!-- Side Bar -->
-        <nav class="sideNav">
+      <!-- Side Bar -->
+      <nav class="sideNav">
+        <ul class="sidebar" hidden>
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><img
+                src="../Arts/images/menubar.png"
+                alt="menubar"
+                class="icon"
+              />
+            </a>
+          </li>
+          <h1>MENU</h1>
 
-            <ul class="sidebar" hidden>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/location.png"
+                alt="Location"
+                class="icon"
+              />Location</a
+            >
+          </li>
 
-                <li onclick="hideSidebar()"><a href="#"><img src="../Arts/images/menubar.png" alt="menubar"
-                            class="icon"> </a></li>
-                <h1>MENU</h1>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/home.png"
+                alt="home"
+                class="icon"
+              />Home</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/shop.png"
+                alt="shop"
+                class="icon"
+              />Shop</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/about.png"
+                alt="about"
+                class="icon"
+              />About</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/contact.png"
+                alt="contact"
+                class="icon"
+              />Contact</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/help.png"
+                alt="help"
+                class="icon"
+              />Help</a
+            >
+          </li>
 
-                <li><a href="#"><img src="../Arts/images/location.png" alt="Location" class="icon">Location</a></li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/account.png"
+                alt="Account"
+                class="icon"
+              />Account</a
+            >
+          </li>
 
-                <li><a href="#"><img src="../Arts/images/home.png" alt="home" class="icon">Home</a></li>
-                <li><a href="#"><img src="../Arts/images/shop.png" alt="shop" class="icon">Shop</a></li>
-                <li><a href="#"><img src="../Arts/images/about.png" alt="about" class="icon">About</a></li>
-                <li><a href="#"><img src="../Arts/images/contact.png" alt="contact" class="icon">Contact</a></li>
-                <li><a href="#"><img src="../Arts/images/help.png" alt="help" class="icon">Help</a></li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Arts/images/languages.png"
+                alt="Language"
+                class="icon"
+              />Language</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-                <li><a href="#"><img src="../Arts/images/account.png" alt="Account" class="icon">Account</a></li>
+      <!-- Top Bar -->
+      <nav class="TopBar">
+        <ul>
+          <li>
+            <a href="../Codes/index.html"
+              ><img
+                src="../Arts/images/CG-OfficialIconWhite.png"
+                alt="logo here"
+                height="auto"
+                width="40"
+            /></a>
+          </li>
 
-                <li><a href="#"><img src="../Arts/images/languages.png" alt="Language" class="icon">Language</a></li>
-            </ul>
-        </nav>
+          <li class="hideonMobile">
+            <a href="#"
+              ><img
+                src="../Arts/images/location.png"
+                alt="Location"
+                class="icon"
+                height="20"
+                width="20"
+              />
+              Location</a
+            >
+          </li>
 
-        <!-- Top Bar -->
-        <nav class="TopBar">
-            <ul>
-                <li><img src="../Arts/images/CG-OfficialIconWhite.png" alt="logo here" height="auto" width="40"></li>
+          <li class="hideonMobile"><a href="#">Home</a></li>
+          <li class="hideonMobile"><a href="#">Shop</a></li>
+          <li class="hideonMobile"><a href="#">About</a></li>
+          <li class="hideonMobile"><a href="#">Contact</a></li>
+          <li class="hideonMobile"><a href="#">Help</a></li>
 
-                <li class="hideonMobile"><a href="#"><img src="../Arts/images/location.png" alt="Location" class="icon" height="20"
-                            width="20">
-                        Location</a>
-                </li>
+          <li class="hideonMobile">
+            <a href="#"
+              ><img
+                src="../Arts/images/account.png"
+                alt="Account"
+                class="icon"
+                height="20"
+                width="20"
+              />
+              Account</a
+            >
+          </li>
 
-                <li class="hideonMobile"><a href="#">Home</a></li>
-                <li class="hideonMobile"><a href="#">Shop</a></li>
-                <li class="hideonMobile"><a href="#">About</a></li>
-                <li class="hideonMobile"><a href="#">Contact</a></li>
-                <li class="hideonMobile"><a href="#">Help</a></li>
+          <li class="hideonMobile">
+            <a href="#"
+              ><img
+                src="../Arts/images/languages.png"
+                alt="Language"
+                class="icon"
+                height="20"
+                width="20"
+              />
+              Language</a
+            >
+          </li>
 
-                <li class="hideonMobile"><a href="#"><img src="../Arts/images/account.png" alt="Account" class="icon" height="20" width="20">
-                        Account</a></li>
-
-                <li class="hideonMobile"><a href="#"><img src="../Arts/images/languages.png" alt="Language" class="icon" height="20"
-                            width="20">
-                        Language</a></li>
-
-                <li onclick="showSidebar()" class="hideonDesktop"><a href="#"><img src="../Arts/images/menubar.png" alt="menubar"
-                            class="icon"></a></li>
-            </ul>
-        </nav>
-
+          <li onclick="showSidebar()" class="hideonDesktop">
+            <a href="#"
+              ><img src="../Arts/images/menubar.png" alt="menubar" class="icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="row">
-            <div class="column left">
-                <h2 font-family="juanaBold" src="../Fonts/JuanaBold.otf">Categories</h2>
-                <ul class="categories">
-                    <li>Community</li>
-                    <li>Housing</li>
-                    <li>Jobs</li>
-                    <li>Services</li>
-                    <li>For Sale</li>
-                    <li>Open Forums</li>
-                </ul>
-                <div class="calendar">
-                    <h2>January</h2>
-                    <div class="calendar__date">
-                        <div class="calendar__day">S</div>
-                        <div class="calendar__day">M</div>
-                        <div class="calendar__day">T</div>
-                        <div class="calendar__day">W</div>
-                        <div class="calendar__day">Th</div>
-                        <div class="calendar__day">F</div>
-                        <div class="calendar__day">S</div>
+      <div class="row">
+        <div class="column left">
+          <h2 font-family="juanaBold" src="../Fonts/JuanaBold.otf">
+            Categories
+          </h2>
+          <ul class="categories">
+            <li>Community</li>
+            <li>Housing</li>
+            <li>Jobs</li>
+            <li>Services</li>
+            <li>For Sale</li>
+            <li>Open Forums</li>
+          </ul>
+          <div class="calendar">
+            <h2>January</h2>
+            <div class="calendar__date">
+              <div class="calendar__day">S</div>
+              <div class="calendar__day">M</div>
+              <div class="calendar__day">T</div>
+              <div class="calendar__day">W</div>
+              <div class="calendar__day">Th</div>
+              <div class="calendar__day">F</div>
+              <div class="calendar__day">S</div>
 
-                        <div class="calendar__number">1</div>
-                        <div class="calendar__number">2</div>
-                        <div class="calendar__number">3</div>
-                        <div class="calendar__number">4</div>
-                        <div class="calendar__number">5</div>
-                        <div class="calendar__number">6</div>
-                        <div class="calendar__number">7</div>
-                        <div class="calendar__number">8</div>
-                        <div class="calendar__number">9</div>
-                        <div class="calendar__number">10</div>
-                        <div class="calendar__number">11</div>
-                        <div class="calendar__number">12</div>
-                        <div class="calendar__number">13</div>
-                        <div class="calendar__number">14</div>
-                        <div class="calendar__number">15</div>
-                        <div class="calendar__number">16</div>
-                        <div class="calendar__number">17</div>
-                        <div class="calendar__number">18</div>
-                        <div class="calendar__number">19</div>
-                        <div class="calendar__number">20</div>
-                        <div class="calendar__number calendar__number--current">21</div>
-                        <div class="calendar__number">22</div>
-                        <div class="calendar__number">23</div>
-                        <div class="calendar__number">24</div>
-                        <div class="calendar__number">25</div>
-                        <div class="calendar__number">26</div>
-                        <div class="calendar__number">27</div>
-                        <div class="calendar__number">28</div>
-                        <div class="calendar__number">29</div>
-                        <div class="calendar__number">30</div>
-                    </div>
-                </div>
+              <div class="calendar__number">1</div>
+              <div class="calendar__number">2</div>
+              <div class="calendar__number">3</div>
+              <div class="calendar__number">4</div>
+              <div class="calendar__number">5</div>
+              <div class="calendar__number">6</div>
+              <div class="calendar__number">7</div>
+              <div class="calendar__number">8</div>
+              <div class="calendar__number">9</div>
+              <div class="calendar__number">10</div>
+              <div class="calendar__number">11</div>
+              <div class="calendar__number">12</div>
+              <div class="calendar__number">13</div>
+              <div class="calendar__number">14</div>
+              <div class="calendar__number">15</div>
+              <div class="calendar__number">16</div>
+              <div class="calendar__number">17</div>
+              <div class="calendar__number">18</div>
+              <div class="calendar__number">19</div>
+              <div class="calendar__number">20</div>
+              <div class="calendar__number calendar__number--current">21</div>
+              <div class="calendar__number">22</div>
+              <div class="calendar__number">23</div>
+              <div class="calendar__number">24</div>
+              <div class="calendar__number">25</div>
+              <div class="calendar__number">26</div>
+              <div class="calendar__number">27</div>
+              <div class="calendar__number">28</div>
+              <div class="calendar__number">29</div>
+              <div class="calendar__number">30</div>
             </div>
-
-            <div class="column middle">
-
-                <!-- Search Box -->
-                <div class="search-container">
-                    <input type="text" placeholder="Search for products...">
-                    <button type="submit">Search</button>
-                </div>
-                <h2>Popular Products</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="../Arts/images/product1.jpg" alt="Product 1">
-                        <h3>Product 1</h3>
-
-                    </div>
-                    <div class="product-card">
-                        <img src="../Arts/images/product2.jpg" alt="Product 2">
-                        <h3>Product 2</h3>
-
-                    </div>
-
-                    <div class="product-card">
-                        <img src="../Arts/images/product3.jpg" alt="Product 3">
-                        <h3>Product 3</h3>
-
-                    </div>
-
-                    <div class="product-card">
-                        <img src="../Arts/images/product4.avif" alt="Product 4">
-                        <h3>Product 4</h3>
-
-                    </div>
-
-                    <div class="product-card">
-                        <img src="../Arts/images/product5.webp" alt="Product 5">
-                        <h3>Product 5</h3>
-
-                    </div>
-
-                    <div class="product-card">
-                        <img src="../Arts/images/product6.jpg" alt="Product 6">
-                        <h3>Product 6</h3>
-
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="column right">
-                <h2>Advertisements</h2>
-                <img src="../Arts/images/Ads50Off.jpg" alt="">
-                <img src="../Arts/images/r15m.jpg" alt="">
-            </div>
+          </div>
         </div>
+
+        <div class="column middle">
+          <!-- Search Box -->
+          <div class="search-container">
+            <input type="text" placeholder="Search for products..." />
+            <button type="submit">Search</button>
+          </div>
+          <h2>Popular Products</h2>
+          <div class="product-grid">
+            <div class="product-card">
+              <img src="../Arts/images/product1.jpg" alt="Product 1" />
+              <h3>Product 1</h3>
+            </div>
+            <div class="product-card">
+              <img src="../Arts/images/product2.jpg" alt="Product 2" />
+              <h3>Product 2</h3>
+            </div>
+
+            <div class="product-card">
+              <img src="../Arts/images/product3.jpg" alt="Product 3" />
+              <h3>Product 3</h3>
+            </div>
+
+            <div class="product-card">
+              <img src="../Arts/images/product4.avif" alt="Product 4" />
+              <h3>Product 4</h3>
+            </div>
+
+            <div class="product-card">
+              <img src="../Arts/images/product5.webp" alt="Product 5" />
+              <h3>Product 5</h3>
+            </div>
+
+            <div class="product-card">
+              <img src="../Arts/images/product6.jpg" alt="Product 6" />
+              <h3>Product 6</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="column right">
+          <h2>Advertisements</h2>
+          <img src="../Arts/images/Ads50Off.jpg" alt="" />
+          <img src="../Arts/images/r15m.jpg" alt="" />
+        </div>
+      </div>
     </main>
 
-
     <footer>
-        <nav>
-            <p>&copy; 2024 Craigslist</p>
-            <div>
-                <a href="#help">Help</a>
-                <a href="#safety">Safety</a>
-                <a href="#privacy">Privacy</a>
-                <a href="#terms">Terms</a>
-                <a href="#about">About</a>
-                <a href="#app">App</a>
-                <a href="#sitemap">Sitemap</a>
-            </div>
-        </nav>
+      <nav>
+        <p>&copy; 2024 Craigslist</p>
+        <div>
+          <a href="#help">Help</a>
+          <a href="#safety">Safety</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#about">About</a>
+          <a href="#app">App</a>
+          <a href="#sitemap">Sitemap</a>
+        </div>
+      </nav>
     </footer>
     <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-
-        }
-
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
