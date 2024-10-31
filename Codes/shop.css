@@ -1,0 +1,127 @@
+/* || CCS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --primary-BG: #2d0a4e;
+  --secondary-BG: #faf7f3;
+  --sideBar-BG: #3f3f3e;
+  --highlight: #c816e0;
+  --text: white;
+  --link: white;
+}
+
+/* || UTILITY CLASSES */
+.icon {
+  width: 45px;
+  height: auto;
+  color: white;
+  font-size: 3rem;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--secondary-BG);
+}
+
+/* || VARIABLES */
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --primary-BG: #2d0a4e;
+  --secondary-BG: #faf7f3;
+  --secondary-button: rgb(28, 28, 216);
+  --sideBar-BG: #3f3f3e;
+  --highlight: #c816e0;
+  --textPrimary: white;
+  --textSecondary: rgb(72, 72, 218);
+  --link: white;
+}
+
+/* || HEADER MAIN */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+
+  padding: 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18%;
+}
+.logo img {
+  width: 3vw;
+  height: 3vw;
+}
+.logo h3 {
+  font-size: 1.8rem;
+}
+
+header .right-row {
+  width: 40%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.right-row .create-post button {
+  color: var(--textSecondary);
+}
+
+.right-row .account {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  flex-direction: row;
+}
+
+.account button:last-child {
+  background-color: var(--secondary-button);
+  color: var(--textPrimary);
+}
+
+.right-row button {
+  padding: 10px 30px;
+
+  border-radius: 9px;
+  border: 1px solid #777;
+}
+
+/* || HEADER CATEGORIES */
+
+.category {
+  padding-top: 20px;
+}
+
+.column option {
+  background-color: blue;
+  color: rebeccapurple;
+}
