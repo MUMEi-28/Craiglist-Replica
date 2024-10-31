@@ -116,13 +116,13 @@ html {
 .mainTitle h1 {
   text-align: center;
   padding: 2rem;
-  font-size: 7rem;
+  font-size: 10vw;
 }
 
 .mainTitle p {
   text-align: center;
   padding: 2rem;
-  font-size: 1.3rem;
+  font-size: 2vw;
 }
 
 /* || MAIN SEARCH */
@@ -142,19 +142,20 @@ html {
 .worldMapContainer {
   background-color: #eeddc7;
   width: 95%;
+  max-width: 1300px;
   margin: auto;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0px hsla(240, 9%, 29%, 0.342);
-}
-
-#world-map {
-  width: 95%;
+  box-shadow: 0 0 10px 1px rgb(68, 68, 82);
 }
 .worldMapContainer h2 {
   text-align: center;
   padding: 30px;
+}
+#world-map {
+  width: 95%;
+  height: auto;
 }
 svg path {
   fill: rgb(38, 64, 112);
@@ -215,19 +216,6 @@ footer nav .footer-menu ul li a:hover::after {
 
 /* || TABLET SIZE */
 @media screen and (max-width: 850px) {
-  /* || MAIN TITLE */
-  .mainTitle {
-    width: 100%;
-    margin: auto;
-    padding: 2rem;
-  }
-
-  .mainTitle h1 {
-    text-align: center;
-    padding: 2rem;
-    font-size: 4rem;
-  }
-
   .mainTitle p {
     text-align: center;
     padding: 2rem;
